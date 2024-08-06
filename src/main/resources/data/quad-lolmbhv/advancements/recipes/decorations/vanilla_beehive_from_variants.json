@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_variant_beehive": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#lieonstudio:beehives"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "quad-lolmbhv:vanilla_beehive_from_variants"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_variant_beehive",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "quad-lolmbhv:vanilla_beehive_from_variants"
+    ]
+  },
+  "sends_telemetry_event": false
+}

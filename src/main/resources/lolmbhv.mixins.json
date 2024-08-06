@@ -1,0 +1,13 @@
+{
+  "required": true ,
+  "package": "de.pnku.mbhv.mixin" ,
+  "compatibilityLevel": "JAVA_21" ,
+  "mixins": [
+    "BlockEntityTypeMixin" ,
+    "PoiTypesAccessor"
+  ] ,
+  "injectors": {
+    "defaultRequire": 1
+  } ,
+  "minVersion": "0.8"
+}
