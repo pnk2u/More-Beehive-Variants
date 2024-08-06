@@ -4,12 +4,14 @@ import de.pnku.mbhv.MoreBeehiveVariants;
 import de.pnku.mbhv.block.MoreBeehiveVariantBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+
+import java.util.function.Consumer;
 
 import static de.pnku.mbhv.init.MbhvBlockInit.more_beehives;
 
@@ -19,7 +21,7 @@ public class MoreBeehiveVariantRecipeGenerator extends FabricRecipeProvider {
     }
 
     @Override
-    public void buildRecipes(RecipeOutput recipeOutput) {
+    public void buildRecipes(Consumer<FinishedRecipe> recipeOutput) {
         for (Block beehiveBlock : more_beehives) {
             String planksWood = ((MoreBeehiveVariantBlock) beehiveBlock).beehiveWoodType;
             Item beehivePlanks = ((MoreBeehiveVariantBlock) beehiveBlock).getPlanksItem(planksWood);
