@@ -15,7 +15,6 @@
     "PPP"
   ],
   "result": {
-    "count": 1,
-    "id": "minecraft:bamboo_planks"
+    "item": "minecraft:bamboo_planks"
   }
 }

@@ -1,6 +1,5 @@
 package de.pnku.mbhv.datagen;
 
-import de.pnku.mbhv.init.MbhvBlockInit;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.models.BlockModelGenerators;

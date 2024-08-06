@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#lieonstudio:beehives"
+            "tag": "lieonstudio:beehives"
           }
         ]
       },

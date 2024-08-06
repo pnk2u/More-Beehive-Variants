@@ -15,7 +15,6 @@
     "PPP"
   ],
   "result": {
-    "count": 1,
-    "id": "minecraft:warped_planks"
+    "item": "minecraft:warped_planks"
   }
 }
