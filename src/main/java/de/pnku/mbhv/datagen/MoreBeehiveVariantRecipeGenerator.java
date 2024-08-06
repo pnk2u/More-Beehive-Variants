@@ -4,7 +4,6 @@ import de.pnku.mbhv.MoreBeehiveVariants;
 import de.pnku.mbhv.block.MoreBeehiveVariantBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
@@ -12,13 +11,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 
-import java.util.concurrent.CompletableFuture;
-
 import static de.pnku.mbhv.init.MbhvBlockInit.more_beehives;
 
 public class MoreBeehiveVariantRecipeGenerator extends FabricRecipeProvider {
-    public MoreBeehiveVariantRecipeGenerator(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
-        super(output, registriesFuture);
+    public MoreBeehiveVariantRecipeGenerator(FabricDataOutput output) {
+        super(output);
     }
 
     @Override

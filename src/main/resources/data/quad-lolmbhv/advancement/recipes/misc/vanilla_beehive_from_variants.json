@@ -1,23 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_string": {
-      "conditions": {
-        "items": [
-         {
-           "items": [ "minecraft:honeycomb" ]
-         }
-       ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_planks": {
+    "has_variant_beehive": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:oak_planks"
-            ]
+            "tag": "lieonstudio:beehives"
           }
         ]
       },
@@ -25,24 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:beehive"
+        "recipe": "quad-lolmbhv:vanilla_beehive_from_variants"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_string",
-      "has_the_recipe"
-    ],
-    [
-      "has_planks",
+      "has_variant_beehive",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:beehive"
+      "quad-lolmbhv:vanilla_beehive_from_variants"
     ]
   },
   "sends_telemetry_event": false
