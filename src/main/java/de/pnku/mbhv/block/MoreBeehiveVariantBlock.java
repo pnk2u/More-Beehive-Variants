@@ -11,12 +11,12 @@ public class MoreBeehiveVariantBlock extends BeehiveBlock {
     public final String beehiveWoodType;
 
     public MoreBeehiveVariantBlock(MapColor colour, String beehiveWoodType) {
-        super(Properties.ofFullCopy(Blocks.BEEHIVE).mapColor(colour));
+        super(Properties.copy(Blocks.BEEHIVE).mapColor(colour));
         this.beehiveWoodType = beehiveWoodType;
     }
 
     public MoreBeehiveVariantBlock(MapColor colour, SoundType sound, String beehiveWoodType) {
-        super(Properties.ofFullCopy(Blocks.BEEHIVE).mapColor(colour).sound(sound));
+        super(Properties.copy(Blocks.BEEHIVE).mapColor(colour).sound(sound));
         this.beehiveWoodType = beehiveWoodType;
     }
 
