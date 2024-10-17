@@ -21,9 +21,9 @@ public class MbhvPointOfInterestTypes {
                 .getPointOfInterestStatesToType();
 
         Holder<PoiType> beehiveEntry = BuiltInRegistries.POINT_OF_INTEREST_TYPE
-                .getHolder(PoiTypes.BEEHIVE).get();
+                .get(PoiTypes.BEEHIVE).get();
 
-        PoiType beehivePoiType = BuiltInRegistries.POINT_OF_INTEREST_TYPE.get(PoiTypes.BEEHIVE);
+        PoiType beehivePoiType = BuiltInRegistries.POINT_OF_INTEREST_TYPE.getValue(PoiTypes.BEEHIVE);
 
         List<BlockState> beehiveBlockStates = new ArrayList<BlockState>(beehivePoiType.matchingStates);
 
