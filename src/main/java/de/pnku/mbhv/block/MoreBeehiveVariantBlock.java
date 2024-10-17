@@ -1,5 +1,8 @@
 package de.pnku.mbhv.block;
 
+import de.pnku.mbhv.MoreBeehiveVariants;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
@@ -11,12 +14,12 @@ public class MoreBeehiveVariantBlock extends BeehiveBlock {
     public final String beehiveWoodType;
 
     public MoreBeehiveVariantBlock(MapColor colour, String beehiveWoodType) {
-        super(Properties.ofFullCopy(Blocks.BEEHIVE).mapColor(colour));
+        super(Properties.ofFullCopy(Blocks.BEEHIVE).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreBeehiveVariants.asId(beehiveWoodType + "_beehive"))));
         this.beehiveWoodType = beehiveWoodType;
     }
 
     public MoreBeehiveVariantBlock(MapColor colour, SoundType sound, String beehiveWoodType) {
-        super(Properties.ofFullCopy(Blocks.BEEHIVE).mapColor(colour).sound(sound));
+        super(Properties.ofFullCopy(Blocks.BEEHIVE).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreBeehiveVariants.asId(beehiveWoodType + "_beehive"))).sound(sound));
         this.beehiveWoodType = beehiveWoodType;
     }
 

@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "tag": "lieonstudio:beehives"
-    }
+    "#lieonstudio:beehives"
   ],
   "result": {
     "count": 1,

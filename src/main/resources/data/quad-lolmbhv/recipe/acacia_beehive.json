@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "H": {
-      "item": "minecraft:honeycomb"
-    },
-    "P": {
-      "item": "minecraft:acacia_planks"
-    }
+    "H": "minecraft:honeycomb",
+    "P": "minecraft:acacia_planks"
   },
   "pattern": [
     "PPP",

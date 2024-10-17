@@ -10,9 +10,9 @@ public class MoreBeehiveVariantsDatagen implements DataGeneratorEntrypoint {
     public void onInitializeDataGenerator(FabricDataGenerator generator) {
         FabricDataGenerator.Pack pack = generator.createPack();
 
-        pack.addProvider(MoreBeehiveVariantRecipeGenerator::new);
-        pack.addProvider(MoreBeehiveVariantBlockStateGenerator::new);
-        pack.addProvider(MoreBeehiveVariantLootTableGenerator::new);
-        pack.addProvider(MoreBeehiveVariantLangGenerator::new);
+        //pack.addProvider(MoreBeehiveVariantRecipeGenerator::new);
+        //pack.addProvider(MoreBeehiveVariantBlockStateGenerator::new);
+        //pack.addProvider(MoreBeehiveVariantLootTableGenerator::new);
+        //pack.addProvider(MoreBeehiveVariantLangGenerator::new);
     }
 }
