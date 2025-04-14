@@ -14,6 +14,7 @@ import java.util.List;
 public class MbhvBlockInit {
     public static final MoreBeehiveVariantBlock BIRCH_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.SAND, "birch");
     public static final MoreBeehiveVariantBlock DARK_OAK_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.COLOR_BROWN, "dark_oak");
+    public static final MoreBeehiveVariantBlock PALE_OAK_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.QUARTZ, "pale_oak");
     public static final MoreBeehiveVariantBlock SPRUCE_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.PODZOL, "spruce");
     public static final MoreBeehiveVariantBlock JUNGLE_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.DIRT, "jungle");
     public static final MoreBeehiveVariantBlock ACACIA_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.COLOR_ORANGE, "acacia");
@@ -29,6 +30,7 @@ public class MbhvBlockInit {
     public static void registerBeehiveBlocks() {
         registerBeehiveBlock(BIRCH_BEEHIVE);
         registerBeehiveBlock(DARK_OAK_BEEHIVE);
+        registerBeehiveBlock(PALE_OAK_BEEHIVE);
         registerBeehiveBlock(SPRUCE_BEEHIVE);
         registerBeehiveBlock(JUNGLE_BEEHIVE);
         registerBeehiveBlock(ACACIA_BEEHIVE);

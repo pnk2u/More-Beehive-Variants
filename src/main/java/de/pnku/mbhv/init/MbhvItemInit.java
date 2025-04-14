@@ -17,6 +17,7 @@ import static de.pnku.mbhv.init.MbhvBlockInit.*;
 public class MbhvItemInit {
     public static final BlockItem BIRCH_BEEHIVE_I = itemFromBlock(BIRCH_BEEHIVE);
     public static final BlockItem DARK_OAK_BEEHIVE_I = itemFromBlock(DARK_OAK_BEEHIVE);
+    public static final BlockItem PALE_OAK_BEEHIVE_I = itemFromBlock(PALE_OAK_BEEHIVE);
     public static final BlockItem SPRUCE_BEEHIVE_I = itemFromBlock(SPRUCE_BEEHIVE);
     public static final BlockItem JUNGLE_BEEHIVE_I = itemFromBlock(JUNGLE_BEEHIVE);
     public static final BlockItem ACACIA_BEEHIVE_I = itemFromBlock(ACACIA_BEEHIVE);
@@ -38,7 +39,8 @@ public class MbhvItemInit {
     public static void registerBeehiveItems() {
         registerBeehiveItem(BIRCH_BEEHIVE_I, Items.BEEHIVE);
         registerBeehiveItem(DARK_OAK_BEEHIVE_I, BIRCH_BEEHIVE_I);
-        registerBeehiveItem(SPRUCE_BEEHIVE_I, DARK_OAK_BEEHIVE_I);
+        registerBeehiveItem(PALE_OAK_BEEHIVE_I, DARK_OAK_BEEHIVE_I);
+        registerBeehiveItem(SPRUCE_BEEHIVE_I, PALE_OAK_BEEHIVE_I);
         registerBeehiveItem(JUNGLE_BEEHIVE_I, SPRUCE_BEEHIVE_I);
         registerBeehiveItem(ACACIA_BEEHIVE_I, JUNGLE_BEEHIVE_I);
         registerBeehiveItem(MANGROVE_BEEHIVE_I, ACACIA_BEEHIVE_I);
