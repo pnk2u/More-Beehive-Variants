@@ -16,9 +16,6 @@
 	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"fabric-datagen": [
-			"de.pnku.mbhv.MoreBeehiveVariantsDatagen"
-		],
 		"main": [
 			"de.pnku.mbhv.MoreBeehiveVariants"
 		]
