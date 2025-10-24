@@ -1,3 +1,5 @@
+### 1.2.2:
+- `1.21.4(-10)`: Recompile .jar-file as the previous one was getting falsely flagged as being malicious by some antivirus software
 ### 1.2.1:
 - Add Ukrainian translation (Thanks to [Starman](https://modrinth.com/user/StarmanMine142))
 ## 1.2.0:
