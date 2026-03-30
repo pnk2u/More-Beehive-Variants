@@ -4,7 +4,7 @@ import de.pnku.mbhv.init.MbhvBlockInit;
 import de.pnku.mbhv.init.MbhvItemInit;
 import de.pnku.mbhv.poi.MbhvPointOfInterestTypes;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public class MoreBeehiveVariants implements ModInitializer {
     public static final String MODID = "quad-lolmbhv";
@@ -16,7 +16,7 @@ public class MoreBeehiveVariants implements ModInitializer {
         MbhvPointOfInterestTypes.init();
     }
 
-    public static ResourceLocation asId(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MODID, path);
+    public static Identifier asId(String path) {
+        return Identifier.fromNamespaceAndPath(MODID, path);
     }
 }
