@@ -4,10 +4,9 @@
 	"version": "${mod_version}",
 	"name": "${mod_name}",
 	"description": "${mod_description}",
-	"authors": [
-		"pnku"
-	],
+	"authors": ["pnku"],
 	"contact": {
+		"email": "contact@pnku.de",
 		"homepage": "https://www.pnku.de/",
 		"sources": "https://github.com/pnk2u/More-Beehive-Variants",
 		"issues": "https://github.com/pnk2u/More-Beehive-Variants/issues"
@@ -27,8 +26,8 @@
 	"depends": {
 		"fabricloader": ">=${loader_version}",
 		"minecraft": [">${minecraft_version_0} <${minecraft_version_1}"],
-		"java": ">=21",
-		"fabric-api": ">=0.100.0"
+		"java": ">=${java_version}",
+		"fabric-api": "*"
 	},
 	"custom": {
 		"modmenu": {
