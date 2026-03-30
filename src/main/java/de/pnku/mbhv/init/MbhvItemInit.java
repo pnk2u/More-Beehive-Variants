@@ -2,7 +2,7 @@ package de.pnku.mbhv.init;
 
 import de.pnku.mbhv.MoreBeehiveVariants;
 import de.pnku.mbhv.block.MoreBeehiveVariantBlock;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -53,6 +53,6 @@ public class MbhvItemInit {
     private static void registerBeehiveItem(BlockItem beehive, Item beehiveAfter) {
         Registry.register(BuiltInRegistries.ITEM, MoreBeehiveVariants.asId(((MoreBeehiveVariantBlock) beehive.getBlock()).beehiveWoodType + "_beehive"), beehive);
 
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.addAfter(beehiveAfter, beehive));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.insertAfter(beehiveAfter, beehive));
     }
 }
