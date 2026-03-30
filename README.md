@@ -14,7 +14,7 @@
 Currently available in:
 - English
 - German
-- Ukrainian (@[StarmanMine142](/../../../../StarmanMine142) with [PR #2](../../pull/2), added in [`1.7.4`](/../../#174))
+- Ukrainian (@[StarmanMine142](/../../../../StarmanMine142) with [PR #2](../../pull/2), added in [`1.2.1`](/../../#121))
 
 Want to help translate? Feel free to open a PR to the **default branch (`1.21(.1)`)**.
 
