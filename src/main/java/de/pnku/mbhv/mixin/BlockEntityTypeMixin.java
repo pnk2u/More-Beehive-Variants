@@ -1,6 +1,8 @@
 package de.pnku.mbhv.mixin;
 
 import de.pnku.mbhv.block.MoreBeehiveVariantBlock;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.BeehiveBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -14,7 +16,7 @@ public class BlockEntityTypeMixin {
 
     @Inject(method = "isValid", at = @At("HEAD"), cancellable = true)
     private void injectedIsValid(BlockState state, CallbackInfoReturnable<Boolean> cir) {
-        if (BlockEntityType.BEEHIVE.equals(this) && state.getBlock() instanceof MoreBeehiveVariantBlock) {
+        if (BuiltInRegistries.BLOCK_ENTITY_TYPE.getOptional(Identifier.withDefaultNamespace("beehive")).get().equals(this) && state.getBlock() instanceof MoreBeehiveVariantBlock) {
             cir.setReturnValue(true);
         }
     }
