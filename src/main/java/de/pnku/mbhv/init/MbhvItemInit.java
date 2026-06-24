@@ -19,8 +19,8 @@ public class MbhvItemInit {
     public static final Item MANGROVE_BEEHIVE_I = new BlockItem(MbhvBlockInit.MANGROVE_BEEHIVE, new Item.Properties());
     public static final Item CHERRY_BEEHIVE_I = new BlockItem(MbhvBlockInit.CHERRY_BEEHIVE, new Item.Properties());
     public static final Item BAMBOO_BEEHIVE_I = new BlockItem(MbhvBlockInit.BAMBOO_BEEHIVE, new Item.Properties());
-    public static final Item CRIMSON_BEEHIVE_I = new BlockItem(MbhvBlockInit.CRIMSON_BEEHIVE, new Item.Properties());
-    public static final Item WARPED_BEEHIVE_I = new BlockItem(MbhvBlockInit.WARPED_BEEHIVE, new Item.Properties());
+    public static final Item CRIMSON_BEEHIVE_I = new BlockItem(MbhvBlockInit.CRIMSON_BEEHIVE, new Item.Properties().fireResistant());
+    public static final Item WARPED_BEEHIVE_I = new BlockItem(MbhvBlockInit.WARPED_BEEHIVE, new Item.Properties().fireResistant());
 
 
     public static void registerBeehiveItems() {
