@@ -3,6 +3,7 @@ package de.pnku.mbhv.init;
 import de.pnku.mbhv.MoreBeehiveVariants;
 import de.pnku.mbhv.block.MoreBeehiveVariantBlock;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.Registry;
 import net.minecraft.world.level.block.SoundType;
@@ -45,5 +46,8 @@ public class MbhvBlockInit {
     private static void registerBeehiveBlock(MoreBeehiveVariantBlock beehive) {
         Registry.register(BuiltInRegistries.BLOCK, MoreBeehiveVariants.asId(beehive.beehiveWoodType + "_beehive"), beehive);
         more_beehives.add(beehive);
+        BuiltInRegistries.BLOCK_ENTITY_TYPE.getOptional(ResourceLocation.withDefaultNamespace("beehive"))
+                .ifPresent(beehiveBlockEntityType
+                        -> beehiveBlockEntityType.addSupportedBlock(beehive));
     }
 }
