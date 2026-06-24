@@ -3,6 +3,7 @@ package de.pnku.mbhv.init;
 import de.pnku.mbhv.MoreBeehiveVariants;
 import de.pnku.mbhv.block.MoreBeehiveVariantBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -10,17 +11,20 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.core.Registry;
 
+import java.util.List;
+
 public class MbhvItemInit {
-    public static final BlockItem BIRCH_BEEHIVE_I = new BlockItem(MbhvBlockInit.BIRCH_BEEHIVE, new Item.Properties());
-    public static final BlockItem DARK_OAK_BEEHIVE_I = new BlockItem(MbhvBlockInit.DARK_OAK_BEEHIVE, new Item.Properties());
-    public static final BlockItem SPRUCE_BEEHIVE_I = new BlockItem(MbhvBlockInit.SPRUCE_BEEHIVE, new Item.Properties());
-    public static final BlockItem JUNGLE_BEEHIVE_I = new BlockItem(MbhvBlockInit.JUNGLE_BEEHIVE, new Item.Properties());
-    public static final BlockItem ACACIA_BEEHIVE_I = new BlockItem(MbhvBlockInit.ACACIA_BEEHIVE, new Item.Properties());
-    public static final BlockItem MANGROVE_BEEHIVE_I = new BlockItem(MbhvBlockInit.MANGROVE_BEEHIVE, new Item.Properties());
-    public static final BlockItem CHERRY_BEEHIVE_I = new BlockItem(MbhvBlockInit.CHERRY_BEEHIVE, new Item.Properties());
-    public static final BlockItem BAMBOO_BEEHIVE_I = new BlockItem(MbhvBlockInit.BAMBOO_BEEHIVE, new Item.Properties());
-    public static final BlockItem CRIMSON_BEEHIVE_I = new BlockItem(MbhvBlockInit.CRIMSON_BEEHIVE, new Item.Properties());
-    public static final BlockItem WARPED_BEEHIVE_I = new BlockItem(MbhvBlockInit.WARPED_BEEHIVE, new Item.Properties());
+    static final Item.Properties beehiveProperties = new Item.Properties().component(DataComponents.BEES, List.of());
+    public static final Item BIRCH_BEEHIVE_I = new BlockItem(MbhvBlockInit.BIRCH_BEEHIVE, beehiveProperties);
+    public static final Item DARK_OAK_BEEHIVE_I = new BlockItem(MbhvBlockInit.DARK_OAK_BEEHIVE, beehiveProperties);
+    public static final Item SPRUCE_BEEHIVE_I = new BlockItem(MbhvBlockInit.SPRUCE_BEEHIVE, beehiveProperties);
+    public static final Item JUNGLE_BEEHIVE_I = new BlockItem(MbhvBlockInit.JUNGLE_BEEHIVE, beehiveProperties);
+    public static final Item ACACIA_BEEHIVE_I = new BlockItem(MbhvBlockInit.ACACIA_BEEHIVE, beehiveProperties);
+    public static final Item MANGROVE_BEEHIVE_I = new BlockItem(MbhvBlockInit.MANGROVE_BEEHIVE, beehiveProperties);
+    public static final Item CHERRY_BEEHIVE_I = new BlockItem(MbhvBlockInit.CHERRY_BEEHIVE, beehiveProperties);
+    public static final Item BAMBOO_BEEHIVE_I = new BlockItem(MbhvBlockInit.BAMBOO_BEEHIVE, beehiveProperties);
+    public static final Item CRIMSON_BEEHIVE_I = new BlockItem(MbhvBlockInit.CRIMSON_BEEHIVE, beehiveProperties);
+    public static final Item WARPED_BEEHIVE_I = new BlockItem(MbhvBlockInit.WARPED_BEEHIVE, beehiveProperties);
 
 
     public static void registerBeehiveItems() {
@@ -36,8 +40,8 @@ public class MbhvItemInit {
         registerBeehiveItem(WARPED_BEEHIVE_I, CRIMSON_BEEHIVE_I);
     }
 
-    private static void registerBeehiveItem(BlockItem beehive, Item beehiveAfter) {
-        Registry.register(BuiltInRegistries.ITEM, MoreBeehiveVariants.asId(((MoreBeehiveVariantBlock) beehive.getBlock()).beehiveWoodType + "_beehive"), beehive);
+    private static void registerBeehiveItem(Item beehive, Item beehiveAfter) {
+        Registry.register(BuiltInRegistries.ITEM, MoreBeehiveVariants.asId(((MoreBeehiveVariantBlock) ((BlockItem) beehive).getBlock()).beehiveWoodType + "_beehive"), beehive);
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.addAfter(beehiveAfter, beehive));
     }
