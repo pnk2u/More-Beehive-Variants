@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.Registry;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.material.MapColor;
 
 import java.util.ArrayList;
@@ -19,10 +20,10 @@ public class MbhvBlockInit {
     public static final MoreBeehiveVariantBlock JUNGLE_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.DIRT, "jungle");
     public static final MoreBeehiveVariantBlock ACACIA_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.COLOR_ORANGE, "acacia");
     public static final MoreBeehiveVariantBlock MANGROVE_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.COLOR_RED, "mangrove");
-    public static final MoreBeehiveVariantBlock CHERRY_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, "cherry");
-    public static final MoreBeehiveVariantBlock BAMBOO_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo");
-    public static final MoreBeehiveVariantBlock CRIMSON_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson");
-    public static final MoreBeehiveVariantBlock WARPED_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.WARPED_STEM, SoundType.NETHER_WOOD, "warped");
+    public static final MoreBeehiveVariantBlock CHERRY_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, "cherry", Properties.of().ignitedByLava());
+    public static final MoreBeehiveVariantBlock BAMBOO_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", Properties.of().ignitedByLava());
+    public static final MoreBeehiveVariantBlock CRIMSON_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", Properties.of());
+    public static final MoreBeehiveVariantBlock WARPED_BEEHIVE = new MoreBeehiveVariantBlock(MapColor.WARPED_STEM, SoundType.NETHER_WOOD, "warped", Properties.of());
 
     public static final List<Block> more_beehives = new ArrayList<>();
 
