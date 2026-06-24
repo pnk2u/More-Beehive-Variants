@@ -26,17 +26,22 @@ public class MbhvItemInit {
     public static final Item MANGROVE_BEEHIVE_I = itemFromBlock(MANGROVE_BEEHIVE);
     public static final Item CHERRY_BEEHIVE_I = itemFromBlock(CHERRY_BEEHIVE);
     public static final Item BAMBOO_BEEHIVE_I = itemFromBlock(BAMBOO_BEEHIVE);
-    public static final Item CRIMSON_BEEHIVE_I = itemFromBlock(CRIMSON_BEEHIVE);
-    public static final Item WARPED_BEEHIVE_I = itemFromBlock(WARPED_BEEHIVE);
+    public static final Item CRIMSON_BEEHIVE_I = itemFromBlock(CRIMSON_BEEHIVE, true);
+    public static final Item WARPED_BEEHIVE_I = itemFromBlock(WARPED_BEEHIVE, true);
 
     public static BlockItem itemFromBlock(MoreBeehiveVariantBlock moreBeehiveVariantBlock) {
-        return new BlockItem(moreBeehiveVariantBlock, setProperties(moreBeehiveVariantBlock));
+        return new BlockItem(moreBeehiveVariantBlock, setProperties(moreBeehiveVariantBlock, false));
     }
 
-    public static Item.Properties setProperties(MoreBeehiveVariantBlock moreBeehiveVariantBlock) {
-        return new Item.Properties()
+    public static BlockItem itemFromBlock(MoreBeehiveVariantBlock moreBeehiveVariantBlock, boolean isNether) {
+        return new BlockItem(moreBeehiveVariantBlock, setProperties(moreBeehiveVariantBlock, isNether));
+    }
+
+    public static Item.Properties setProperties(MoreBeehiveVariantBlock moreBeehiveVariantBlock, boolean isNether) {
+        Item.Properties properties = new Item.Properties()
                 .setId(ResourceKey.create(Registries.ITEM,BuiltInRegistries.BLOCK.getKey(moreBeehiveVariantBlock)))
                 .component(DataComponents.BEES, Bees.EMPTY).useBlockDescriptionPrefix();
+        return isNether ? properties.fireResistant() : properties;
     }
 
     public static void registerBeehiveItems() {
