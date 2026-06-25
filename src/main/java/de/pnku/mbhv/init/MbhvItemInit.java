@@ -13,6 +13,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.core.Registry;
 import net.minecraft.world.item.component.Bees;
+import net.minecraft.world.item.component.BlockItemStateProperties;
+import net.minecraft.world.level.block.BeehiveBlock;
 
 import static de.pnku.mbhv.init.MbhvBlockInit.*;
 
@@ -40,7 +42,7 @@ public class MbhvItemInit {
     public static Item.Properties setProperties(MoreBeehiveVariantBlock moreBeehiveVariantBlock, boolean isNether) {
         Item.Properties properties = new Item.Properties()
                 .setId(ResourceKey.create(Registries.ITEM,BuiltInRegistries.BLOCK.getKey(moreBeehiveVariantBlock)))
-                .component(DataComponents.BEES, Bees.EMPTY).useBlockDescriptionPrefix();
+                .component(DataComponents.BEES, Bees.EMPTY).component(DataComponents.BLOCK_STATE, BlockItemStateProperties.EMPTY.with(BeehiveBlock.HONEY_LEVEL, 0)).useBlockDescriptionPrefix();
         return isNether ? properties.fireResistant() : properties;
     }
 
