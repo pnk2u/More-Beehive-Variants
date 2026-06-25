@@ -1,4 +1,1 @@
-<!--publish=true-->
-### 1.2.6:
-- `1.21.4(-11)`, `26.1(2)`: Fix crash when used alongside <ins>EssentialGUI</ins> (&#x200A;<sub><a title="EssentialGUI&#10;on Modrinth" href="https://modrinth.com/mod/essentialgui/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:MR--><img width=5 height=8 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="EssentialGUI&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/essentialgui/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;) and hovering one of the _Beehive Variants_ in the inventory  
-> `1.2.5`'s fix for this issue was incomplete for those two versions  
+<!--publish=false-->
