@@ -4,10 +4,10 @@
     "has_string": {
       "conditions": {
         "items": [
-         {
-           "items": [ "minecraft:honeycomb" ]
-         }
-       ]
+          {
+            "items": [ "minecraft:honeycomb" ]
+          }
+        ]
       },
       "trigger": "minecraft:inventory_changed"
     },
@@ -15,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:oak_planks"
-            ]
+            "tag": "quad-lolmbhv:vanilla_beehive_planks"
           }
         ]
       },
