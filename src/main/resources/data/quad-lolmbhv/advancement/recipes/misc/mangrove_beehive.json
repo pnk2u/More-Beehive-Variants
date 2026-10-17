@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbhv:mangrove_beehive"
+        "recipes": "quad-lolmbhv:mangrove_beehive"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

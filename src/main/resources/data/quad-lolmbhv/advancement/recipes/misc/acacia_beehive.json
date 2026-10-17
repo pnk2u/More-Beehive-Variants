@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbhv:acacia_beehive"
+        "recipes": "quad-lolmbhv:acacia_beehive"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

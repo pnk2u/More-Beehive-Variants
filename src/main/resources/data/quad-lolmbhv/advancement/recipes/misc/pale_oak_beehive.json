@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbhv:pale_oak_beehive"
+        "recipes": "quad-lolmbhv:pale_oak_beehive"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

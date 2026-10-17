@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbhv:cherry_beehive"
+        "recipes": "quad-lolmbhv:cherry_beehive"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

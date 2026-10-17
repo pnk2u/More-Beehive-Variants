@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbhv:crimson_beehive"
+        "recipes": "quad-lolmbhv:crimson_beehive"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

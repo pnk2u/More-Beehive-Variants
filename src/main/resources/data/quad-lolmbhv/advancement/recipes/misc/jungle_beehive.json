@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbhv:jungle_beehive"
+        "recipes": "quad-lolmbhv:jungle_beehive"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

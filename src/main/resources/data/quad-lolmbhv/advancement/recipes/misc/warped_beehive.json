@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbhv:warped_beehive"
+        "recipes": "quad-lolmbhv:warped_beehive"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbhv:birch_beehive"
+        "recipes": "quad-lolmbhv:birch_beehive"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

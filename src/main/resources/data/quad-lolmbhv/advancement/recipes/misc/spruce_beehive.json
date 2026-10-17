@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbhv:spruce_beehive"
+        "recipes": "quad-lolmbhv:spruce_beehive"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
