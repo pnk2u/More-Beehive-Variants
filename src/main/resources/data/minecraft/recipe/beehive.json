@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "P": "minecraft:oak_planks",
+    "P": "#quad-lolmbhv:vanilla_beehive_planks",
     "H": "minecraft:honeycomb"
   },
   "pattern": [
