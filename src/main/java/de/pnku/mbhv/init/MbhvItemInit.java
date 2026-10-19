@@ -22,6 +22,7 @@ public class MbhvItemInit {
     public static final Item BIRCH_BEEHIVE_I = itemFromBlock(BIRCH_BEEHIVE);
     public static final Item DARK_OAK_BEEHIVE_I = itemFromBlock(DARK_OAK_BEEHIVE);
     public static final Item PALE_OAK_BEEHIVE_I = itemFromBlock(PALE_OAK_BEEHIVE);
+    public static final Item POPLAR_BEEHIVE_I = itemFromBlock(POPLAR_BEEHIVE);
     public static final Item SPRUCE_BEEHIVE_I = itemFromBlock(SPRUCE_BEEHIVE);
     public static final Item JUNGLE_BEEHIVE_I = itemFromBlock(JUNGLE_BEEHIVE);
     public static final Item ACACIA_BEEHIVE_I = itemFromBlock(ACACIA_BEEHIVE);
@@ -50,7 +51,8 @@ public class MbhvItemInit {
         registerBeehiveItem(BIRCH_BEEHIVE_I, Items.BEEHIVE);
         registerBeehiveItem(DARK_OAK_BEEHIVE_I, BIRCH_BEEHIVE_I);
         registerBeehiveItem(PALE_OAK_BEEHIVE_I, DARK_OAK_BEEHIVE_I);
-        registerBeehiveItem(SPRUCE_BEEHIVE_I, PALE_OAK_BEEHIVE_I);
+        registerBeehiveItem(POPLAR_BEEHIVE_I, PALE_OAK_BEEHIVE_I);
+        registerBeehiveItem(SPRUCE_BEEHIVE_I, POPLAR_BEEHIVE_I);
         registerBeehiveItem(JUNGLE_BEEHIVE_I, SPRUCE_BEEHIVE_I);
         registerBeehiveItem(ACACIA_BEEHIVE_I, JUNGLE_BEEHIVE_I);
         registerBeehiveItem(MANGROVE_BEEHIVE_I, ACACIA_BEEHIVE_I);
