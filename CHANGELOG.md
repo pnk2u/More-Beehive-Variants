@@ -3,6 +3,7 @@
 - `26.3`:
     - Update to <ins>26.3</ins>
     - Add _**Poplar** Beehive_ (Textures by [hunnycakehorse](https://www.modrinth.com/user/hunnycakehorse))
+- Fix _Beehive_ variants always dropping as if mined with _Silk Touch_ when mined with any tool regardless of enchantment
 - Implement _Tag Entry Removal_ in _(Vanilla) **Oak** Beehive_ crafting recipe
   >    #### What this means:
   >   - _(Vanilla) **Oak** Beehives_ can now be crafted natively with any modded Planks as well as _**Oak** Planks_.
